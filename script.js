@@ -1,5 +1,5 @@
-// Change navbar style on scroll
+// Change navbar background on scroll
 window.addEventListener('scroll', function () {
-  const header = document.getElementById('navbar');
-  header.classList.toggle('scrolled', window.scrollY > 50);
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
