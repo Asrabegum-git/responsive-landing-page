@@ -1,77 +1,54 @@
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+body, html {
+  height: 100%;
 }
 
-/* Navigation Styling */
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: transparent;
-  padding: 1rem 2rem;
-  transition: background-color 0.4s ease;
-  z-index: 1000;
-}
-
-.navbar.scrolled {
-  background-color: #333;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #00bcd4;
-}
-
-/* Hero Section */
-.hero {
+.hero-section {
   height: 100vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Blue-Purple Gradient */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
   text-align: center;
+  color: #f9f9f9;
+  padding: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    background: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    display: none;
-  }
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
 
-  .nav-links.show {
-    display: block;
-  }
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-btn {
+  text-decoration: none;
+  background: #ffffff;
+  color: #764ba2;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.start-btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
 }
